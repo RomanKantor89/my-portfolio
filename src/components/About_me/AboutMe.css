@@ -1,0 +1,97 @@
+
+.page .main {
+	margin-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.page h3 {
+	font-size: 22px;
+	font-weight: 700;
+	font-family: "Playfair Display", serif;
+	margin-bottom: 20px;
+}
+
+.page .main .about-text {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.65;
+	margin-bottom: 1rem;
+	width: 57%;
+}
+
+.page .personal h3 {
+	font-family: "Playfair Display", serif;
+	font-size: 22px;
+	font-weight: 700;	
+	margin-top: 3rem;
+}
+
+.page .personal {
+	padding-bottom: 5%;
+}
+
+.page .personal ul li{
+	line-height: 1em;
+	margin-bottom: 15px;
+	display: inline-block;
+	position: relative;
+}
+
+.page .personal ul li span.title{
+	font-family: "Playfair Display", serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	color: #fff;	
+	
+}
+
+.page .personal ul li span.value{
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #e1e1e1;
+}
+
+.page .personal ul li span.value a{
+	color: #e1e1e1;
+}
+
+@media only screen and (max-width: 1230px) {
+	.page .main .about-text{
+		width: 100%;
+	}
+
+	.page .main {
+		padding-right: 10%;
+	}
+
+	.page .personal {
+		width: 60%
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.page .heading .icon {
+		padding-left: 93%;
+	}
+} 
+
+
+@media only screen and (max-width: 450px) {
+
+	.page .heading {
+		margin-right: 5rem;
+	}
+
+	.page .heading .icon {
+		padding-left: 89%;
+	}
+
+	.page .personal {
+		width: 100%;
+	}
+} 
+

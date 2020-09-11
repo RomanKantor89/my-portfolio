@@ -1,0 +1,200 @@
+.main-resume {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: 2%;
+}
+
+.main-resume .section {
+	width: 47%;
+	padding: 10px;
+}
+
+.main-resume .section h3 {
+	text-align: center;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+
+.main-resume .section ul {
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+
+.main-resume .section ul li {
+	position: relative;
+	margin-left: 10px;
+	padding: 15px;
+	margin-bottom: 13%;
+}
+
+.main-resume .section ul li .line-left {
+	border-left: 2px solid rgb(73, 179, 240);
+	height: 100%;
+	padding-left: 10%;
+	position: absolute;
+	top: 0;
+	left: -5px;
+}
+
+.main-resume .section ul li .line-left::before {
+	content:"";
+	width: 10px;
+	height: 10px;
+	border: 2px solid rgb(73, 179, 240);
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	left: -6px;
+	box-sizing: border-box;
+}
+
+.main-resume .section ul li .line-left::after {
+	content:"";
+	width: 10px;
+	height: 10px;
+	border: 2px solid rgb(73, 179, 240);
+	border-radius: 50%;
+	position: absolute;
+	left: -6px;
+	top: 100%;
+	box-sizing: border-box;
+}
+
+.main-resume .section .info h4 {
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: .5px;
+	line-height: 26px;
+	font-family: "Playfair Display", serif;
+}
+
+.main-resume .section .info h5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	color: #00A3E1;
+}
+
+.main-resume .section p {
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.main-resume .section ul li .year {
+	height: 100%;
+	left: -10px;
+	top: 0;
+	position: absolute;
+}
+
+.main-resume .section ul li .year span {
+	position: absolute;
+	font-size: 16px;
+	transform: translateX(40%);
+}
+
+.main-resume .section ul li .year .to {
+	top: -17px;
+
+}
+
+.main-resume .section ul li .year .from {
+	top: 98%;
+}
+
+.main-resume .section .skill-item .progress {
+	height: 10px;
+	background-color: #404144;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 20px;
+}
+
+.main-resume .section .skill-item .progress .progress-bar {
+	height: 10px;
+	/* transition: all 1s ease-out;  */
+	background-color: #00A3E1;
+}
+
+.main-resume .section .skill-item h4 {
+	font-size: 16px;
+	font-weight: 500;
+	
+}
+
+.main-resume .section .skill-item {
+	padding-right: 25px;
+}
+
+.main-resume .section .resume-button .btn-main {
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+	line-height: 100%;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #00A3E1;
+	transition: all .3s ease;
+	justify-self: center;
+}
+
+.main-resume .section .resume-button {
+	margin-bottom: 10%;
+	margin-top: 15%;
+	
+
+}
+
+.main-resume .section .resume-button .btn-main:hover {
+	background-color: #00A3E1;
+	color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+	.main-resume .section {
+		width: 100%;
+		padding: 0px;
+		padding-right: 30px;
+	}
+
+	.main-resume .section .skill-item {
+		padding-right: 25px;
+	}
+
+	.main-resume .section .resume-button {
+		margin-left: 32.5%;
+	}
+} 
+
+@media only screen and (max-width: 768px) {
+	.main-resume .section .resume-button {
+		margin-top: 20%;
+		margin-left: 28%;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.main-resume .section {
+		width: 100%;
+	}
+
+	.main-resume .section{
+		padding-right: 30px;
+	}
+
+	.main-resume .section .resume-button {
+		margin-top: 20%;
+		margin-left: 16%;
+	}
+	
+} 
