@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSuitcase } from "@fortawesome/free-solid-svg-icons";
 import Card from 'react-bootstrap/Card'
-import Nav from 'react-bootstrap/Nav';
 import './Portfolio.css';
 import '../../App.css';
 
@@ -80,7 +79,7 @@ class Portfolio extends Component {
         </Card>
         <h3 className="mobile-title"> My-Portfolio </h3>
         <Card >
-          <Card.Link  href="https://github.com/RomanKantor89/Student-Courses_Management" target="_blank">
+          <Card.Link  href="https://github.com/RomanKantor89/my-portfolio" target="_blank">
             <Card.Img src={require('../../images/portfolio.jpg')} alt="Card image"/>
             <Card.ImgOverlay >
               <Card.Title> My-Portfolio <br/> (React)</Card.Title>

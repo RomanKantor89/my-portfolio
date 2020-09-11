@@ -1,1 +1,20 @@
-.Blog {}
+.main-blog {
+    
+  
+}
+
+.page .particles {
+    margin-right: 5%;
+    margin-top: 0px;
+    margin-bottom: 5%;
+}
+
+.main-blog .coming-soon {
+    position: absolute;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 60px;
+    top: 350px;
+    left: 400px;
+    color: rgba(255, 255, 255, 0.801);
+}
