@@ -159,6 +159,7 @@
 
 }
 
+
 /* Heading styling for all the pages */
 
 .page {
@@ -198,6 +199,49 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+  .page{
+    margin-left: 20px;
+  }
+  .page .heading {
+    margin-right: 10%;
+  }
+  .page .heading .icon {
+    margin-left: -2%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .page{
+    margin-left: 30px;
+  }
+  .page .heading .icon {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .page{
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .page{
+    margin-left: 25px;
+  }
+  .page .heading .icon{
+    display: none;
+  }
+  .page .heading {
+    margin-left: 4%;
+    margin-bottom: 30px;
+  }
+
+  .mobile-nav h2 {
+    left: 40%;
+  }
+}
 
 
 

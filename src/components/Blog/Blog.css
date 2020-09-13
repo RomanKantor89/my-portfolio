@@ -4,17 +4,40 @@
 }
 
 .page .particles {
-    margin-right: 5%;
-    margin-top: 0px;
-    margin-bottom: 5%;
+    width: 97%;
+    height:100%;
 }
 
 .main-blog .coming-soon {
     position: absolute;
+	top: 50%;
+	right: 1.5%;
+	width: 100%;
+	text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 60px;
-    top: 350px;
-    left: 400px;
     color: rgba(255, 255, 255, 0.801);
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+.main-blog .coming-soon:hover {
+    color: whitesmoke;
+    text-shadow: 1px 1px 10px white;
+}
+
+.main-blog .coming-soon .break {
+    display: none;
+}
+
+@media only screen and (max-width: 575px) {
+    .main-blog .coming-soon {
+        top: 35%;
+        right: -1.5%;
+    }
+
+    .main-blog .coming-soon .break {
+        display: block;
+    }
 }

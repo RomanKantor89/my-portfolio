@@ -92,7 +92,7 @@ class Blog extends Component {
         />
 
         <div className="main-blog">
-          <h1 className="coming-soon"> COMING SOON.. </h1>
+          <h1 className="coming-soon"> COMING <span className="break"> &nbsp; </span> SOON.. </h1>
         </div>
 
        </div>  
