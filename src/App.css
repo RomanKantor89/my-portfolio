@@ -51,7 +51,6 @@
   border-right: 1px solid #202226;
   overflow: auto;
   overflow-x: hidden;
-  transition: all 1s linear;
   z-index: 2;
 }
 
@@ -144,10 +143,34 @@
   font-weight: 500;
 }
 
+.main-nav-enter,
+.main-nav-exit {
+  transition: transform 1000ms ease-in-out;
+}
+
+.main-nav-enter {
+  transform: translateX(-100%);
+}
+.main-nav-enter-active {
+  transform: translateX(100%);
+
+}
+
+.main-nav-exit {
+  transform: translateX(50%);
+}
+
+.main-nav-exit-active {
+  transform: translateX(-50%);
+}
+
+
+
 @media only screen and (max-width: 767px) {
   .mobile-nav {
     display: block;
   }
+
 
   .main-nav {
     display: none;

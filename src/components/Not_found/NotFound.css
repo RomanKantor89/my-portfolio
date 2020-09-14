@@ -1,1 +1,48 @@
-.Not_found {}
+.main-not-found {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	margin-left: -4%;
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.801);
+	letter-spacing: 5px;
+	transition: 0.3s;
+}
+
+.main-not-found .home-link {
+	position: relative;
+	margin-top: 6%;
+	left: -2%;
+}
+
+.main-not-found .home-link .nav-link {
+	color: rgb(241, 242, 243);
+}
+
+.main-not-found .home-link:hover {
+	text-shadow: 1px 1px 12px rgb(27, 126, 192);
+}
+
+.main-not-found .lost-image {
+	position: relative;
+	left: -2.5%;
+	margin-top: 6%;
+	width: 200px;
+}
+
+@media only screen and (max-width: 575px) {
+	.main-not-found {
+			font-weight: 500;
+			font-size: 24px;
+			top: 12%;
+			margin-right: -3%;
+	}
+
+	.main-not-found .lost-image {
+			left: -3%;
+	}
+	
+}
