@@ -69,7 +69,7 @@ class App extends Component {
 
         <div className="content">
           <Switch>
-            <Route exact path='/' render={() => (<Home />)} />
+            <Route exact path='https://romankantor89.github.io/my-portfolio/home' render={() => (<Home />)} />
             <Route exact path='/AboutMe' render={() => (<AboutMe />)} />
             <Route exact path='/Resume' render={() => (<Resume />)} />
             <Route exact path='/Portfolio' render={() => (<Portfolio />)} />
@@ -88,10 +88,10 @@ export default App;
 
 const Navbar = () => {
   return(
-    <Nav defaultActiveKey="/">
+    <Nav defaultActiveKey="https://romankantor89.github.io/my-portfolio/home">
       <ul>
         <li>
-          <Nav.Link href="/"> 
+          <Nav.Link href="https://romankantor89.github.io/my-portfolio/home"> 
             <FontAwesomeIcon icon={faHome} /> &nbsp;
             HOME
             <span className="border"></span>
