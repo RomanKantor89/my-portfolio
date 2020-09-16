@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
+import {NavLink,Link} from 'react-router-dom';
 import { Route, Switch} from "react-router-dom";
 import { faHome, faUser, faIdCard, faSuitcase, faBlog, faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
@@ -69,12 +70,12 @@ class App extends Component {
 
         <div className="content">
           <Switch>
-            <Route path={process.env.PUBLIC_URL + '/'} render={() => (<Home />)} />
-            <Route path={process.env.PUBLIC_URL + '/AboutMe'} render={() => (<AboutMe />)} />
-            <Route path={process.env.PUBLIC_URL + '/Resume'} render={() => (<Resume />)} />
-            <Route path={process.env.PUBLIC_URL + '/Portfolio'} render={() => (<Portfolio />)} />
-            <Route path={process.env.PUBLIC_URL + '/Blog'} render={() => (<Blog />)} />
-            <Route path={process.env.PUBLIC_URL + '/Contact'} render={() => (<Contact />)} />
+            <Route exact path='/' render={() => (<Home />)} />
+            <Route exact path='/AboutMe' render={() => (<AboutMe />)} />
+            <Route exact path='/Resume' render={() => (<Resume />)} />
+            <Route exact path='/Portfolio' render={() => (<Portfolio />)} />
+            <Route exact path='/Blog' render={() => (<Blog />)} />
+            <Route exact path='/Contact' render={() => (<Contact />)} />
             <Route render={() => (<NotFound />)} />
           </Switch> 
         </div>
@@ -88,44 +89,44 @@ export default App;
 
 const Navbar = () => {
   return(
-    <Nav defaultActiveKey="/my-portfolio">
+    <Nav defaultActiveKey="/">
       <ul>
         <li>
-          <Nav.Link href="/my-portfolio"> 
+          <Link to="/" className="nav-link" > 
             <FontAwesomeIcon icon={faHome} /> &nbsp;
             HOME
             <span className="border"></span>
-          </Nav.Link>
+          </Link>
         </li>
         <li>
-          <Nav.Link href="/my-portfolio/AboutMe">
+          <Link to="/AboutMe" className="nav-link">
             <FontAwesomeIcon  icon={faUser}/> &nbsp;
             ABOUT ME
-          </Nav.Link>
+          </Link>
         </li>
         <li>
-          <Nav.Link href="/my-portfolio/Resume">
+          <Link to="/Resume" className="nav-link">
             <FontAwesomeIcon icon={faIdCard}/> &nbsp;
             RESUME
-          </Nav.Link>
+          </Link>
         </li>
         <li>
-          <Nav.Link href="/my-portfolio/Portfolio">
+          <Link to="/Portfolio" className="nav-link">
             <FontAwesomeIcon icon={faSuitcase}/> &nbsp;
             PORTFOLIO
-          </Nav.Link>
+          </Link>
         </li>
         <li>
-          <Nav.Link href="/my-portfolio/Blog">
+          <Link to="/Blog" className="nav-link">
             <FontAwesomeIcon icon={faBlog}/> &nbsp;
             BLOG
-          </Nav.Link> 
+          </Link> 
         </li>
         <li>
-          <Nav.Link href="/my-portfolio/Contact">
+          <Link to="/Contact" className="nav-link">
             <FontAwesomeIcon icon={faEnvelope}/> &nbsp;
             CONTACT
-          </Nav.Link>
+          </Link>
         </li>
       </ul>
     </Nav>
