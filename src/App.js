@@ -89,10 +89,10 @@ export default App;
 
 const Navbar = () => {
   return(
-    <Nav defaultActiveKey="/my-portfolio">
+    <Nav defaultActiveKey="/">
       <ul>
         <li>
-          <Link to="/my-portfolio" className="nav-link" > 
+          <Link to="/" className="nav-link" > 
             <FontAwesomeIcon icon={faHome} /> &nbsp;
             HOME
             <span className="border"></span>
