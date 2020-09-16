@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
-import {NavLink,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { Route, Switch} from "react-router-dom";
 import { faHome, faUser, faIdCard, faSuitcase, faBlog, faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"

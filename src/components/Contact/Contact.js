@@ -38,8 +38,9 @@ class Contact extends Component {
       'message': this.state.message
     };
 
-    fetch("http://localhost:8080/api/email", {
+    fetch("https://my-portfolio-server-75066.web.app/api/email", {
       method: 'POST',
+      mode: 'no-cors',
       headers: { "Content-Type": 'application/json' },
       body: JSON.stringify(newContact)
     })
@@ -49,9 +50,13 @@ class Contact extends Component {
           return response.json();
         } else if (response.status >= 400 && response.status < 500) {
           // Error caused by the requestor
-          throw Error(`HTTP ${response.status}, ${response.statusText}`);
+          console.log(response.status);
+          console.log(response.statusText);
+          throw Error(`HTTP ${response.status}, ${response.statusText}`); 
         } else {
           // Some other situation
+          console.log(response.status);
+          console.log(response.statusText);
           throw Error(`HTTP ${response.status}, ${response.statusText}`);
         }
       })
