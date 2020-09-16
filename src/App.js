@@ -99,7 +99,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/my-portfolio/AboutMe" className="nav-link">
+          <Link to="/AboutMe" className="nav-link">
             <FontAwesomeIcon  icon={faUser}/> &nbsp;
             ABOUT ME
           </Link>
