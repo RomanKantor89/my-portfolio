@@ -38,9 +38,8 @@ class Contact extends Component {
       'message': this.state.message
     };
 
-    fetch("https://my-portfolio-server-75066.web.app/api/email", {
+    fetch("https://pacific-cliffs-62582.herokuapp.com/api/email", {
       method: 'POST',
-      mode: 'no-cors',
       headers: { "Content-Type": 'application/json' },
       body: JSON.stringify(newContact)
     })
