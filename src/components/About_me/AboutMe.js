@@ -52,10 +52,6 @@ class AboutMe extends Component {
               <span className="value"> Roman Kantor </span> 
             </li> &nbsp; &nbsp;
             <li>
-              <span className="title"> Age:</span>
-              <span className="value"> 31 </span>
-            </li> &nbsp; &nbsp;
-            <li>
               <span className="title"> Residence: </span>
               <span className="value"> Toronto, Canada </span>
             </li> &nbsp; &nbsp;

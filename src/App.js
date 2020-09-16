@@ -50,7 +50,7 @@ class App extends Component {
               <img className="HeadShotImage" src={require('../src/images/RomanHeadShotCroped.jpg')} alt="Original"/>
               <h2>ROMAN KANTOR</h2>
             </div>
-            <div className="main-menu-links" id="NavLinks" >
+            <div className="main-menu-links" id="NavLinks" tabIndex="0" onBlur={this.updateMenuState} >
               <Navbar />
             </div>
             <div className="main-menu-links">
@@ -115,12 +115,6 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faSuitcase}/> &nbsp;
             PORTFOLIO
           </Link>
-        </li>
-        <li>
-          <Link to="/Blog" className="nav-link">
-            <FontAwesomeIcon icon={faBlog}/> &nbsp;
-            BLOG
-          </Link> 
         </li>
         <li>
           <Link to="/Contact" className="nav-link">
