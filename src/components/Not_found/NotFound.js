@@ -85,7 +85,7 @@ class NotFound extends Component {
     />
     <div className="main-not-found">
       <h1 className="lost"> You got lost.. its time to go.. </h1>
-      <h1 className="home-link"> <Nav.Link href="/"> HOME </Nav.Link></h1>
+      <h1 className="home-link"> <Nav.Link href="/my-portfolio/Home"> HOME </Nav.Link></h1>
       <img className="lost-image" src={require('../../images/lost.png')} alt="Original"/>
     </div>
 

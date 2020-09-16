@@ -69,12 +69,12 @@ class App extends Component {
 
         <div className="content">
           <Switch>
-            <Route exact path='https://romankantor89.github.io/my-portfolio/home' render={() => (<Home />)} />
-            <Route exact path='/AboutMe' render={() => (<AboutMe />)} />
-            <Route exact path='/Resume' render={() => (<Resume />)} />
-            <Route exact path='/Portfolio' render={() => (<Portfolio />)} />
-            <Route exact path='/Blog' render={() => (<Blog />)} />
-            <Route exact path='/Contact' render={() => (<Contact />)} />
+            <Route path={process.env.PUBLIC_URL + '/Home'} render={() => (<Home />)} />
+            <Route path={process.env.PUBLIC_URL + '/AboutMe'} render={() => (<AboutMe />)} />
+            <Route path={process.env.PUBLIC_URL + '/Resume'} render={() => (<Resume />)} />
+            <Route path={process.env.PUBLIC_URL + '/Portfolio'} render={() => (<Portfolio />)} />
+            <Route path={process.env.PUBLIC_URL + '/Blog'} render={() => (<Blog />)} />
+            <Route path={process.env.PUBLIC_URL + '/Contact'} render={() => (<Contact />)} />
             <Route render={() => (<NotFound />)} />
           </Switch> 
         </div>
@@ -88,41 +88,41 @@ export default App;
 
 const Navbar = () => {
   return(
-    <Nav defaultActiveKey="https://romankantor89.github.io/my-portfolio/home">
+    <Nav defaultActiveKey="/my-portfolio/Home">
       <ul>
         <li>
-          <Nav.Link href="https://romankantor89.github.io/my-portfolio/home"> 
+          <Nav.Link href="/my-portfolio/Home"> 
             <FontAwesomeIcon icon={faHome} /> &nbsp;
             HOME
             <span className="border"></span>
           </Nav.Link>
         </li>
         <li>
-          <Nav.Link href="/AboutMe">
+          <Nav.Link href="/my-portfolio/AboutMe">
             <FontAwesomeIcon  icon={faUser}/> &nbsp;
             ABOUT ME
           </Nav.Link>
         </li>
         <li>
-          <Nav.Link href="/Resume">
+          <Nav.Link href="/my-portfolio/Resume">
             <FontAwesomeIcon icon={faIdCard}/> &nbsp;
             RESUME
           </Nav.Link>
         </li>
         <li>
-          <Nav.Link href="/Portfolio">
+          <Nav.Link href="/my-portfolio/Portfolio">
             <FontAwesomeIcon icon={faSuitcase}/> &nbsp;
             PORTFOLIO
           </Nav.Link>
         </li>
         <li>
-          <Nav.Link href="/Blog">
+          <Nav.Link href="/my-portfolio/Blog">
             <FontAwesomeIcon icon={faBlog}/> &nbsp;
             BLOG
           </Nav.Link> 
         </li>
         <li>
-          <Nav.Link href="/Contact">
+          <Nav.Link href="/my-portfolio/Contact">
             <FontAwesomeIcon icon={faEnvelope}/> &nbsp;
             CONTACT
           </Nav.Link>
