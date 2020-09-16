@@ -152,7 +152,7 @@
   transform: translateX(-100%);
 }
 .main-nav-enter-active {
-  transform: translateX(100%);
+  transform: translateX(95%);
 
 }
 

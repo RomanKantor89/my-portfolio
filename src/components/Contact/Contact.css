@@ -160,7 +160,10 @@
 @media only screen and (max-width: 415px) {
 	.form {
 		margin-right: 4%;
-		margin-left: -2%;
+		margin-left: -4%;
+	}
+	.page .main-contact .contact-form .subheading {
+		margin-right: 14%;
 	}
 }
 
