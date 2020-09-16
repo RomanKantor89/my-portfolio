@@ -40,10 +40,10 @@ class App extends Component {
           <a className="mobile-toggle" onClick={this.updateMenuState}>
             <FontAwesomeIcon icon={faBars}/>  
           </a>
-          <h2>ROMAN KANTOR</h2>
+          <h2><Link to="/" className="nav-link">ROMAN KANTOR</Link></h2>
         </div>
         {/* main menu */}
-        <CSSTransition in={this.state.mobileToggle} timeout={500} classNames="main-nav" > 
+        <CSSTransition in={this.state.mobileToggle} timeout={300} classNames="main-nav" > 
 
           <div className={this.state.mobileToggle ? "main-nav-on" : "main-nav"}>
             <div className="head-shot-section"> 
