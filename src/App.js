@@ -69,7 +69,7 @@ class App extends Component {
 
         <div className="content">
           <Switch>
-            <Route path={process.env.PUBLIC_URL + '/Home'} render={() => (<Home />)} />
+            <Route path={process.env.PUBLIC_URL + '/'} render={() => (<Home />)} />
             <Route path={process.env.PUBLIC_URL + '/AboutMe'} render={() => (<AboutMe />)} />
             <Route path={process.env.PUBLIC_URL + '/Resume'} render={() => (<Resume />)} />
             <Route path={process.env.PUBLIC_URL + '/Portfolio'} render={() => (<Portfolio />)} />
@@ -88,10 +88,10 @@ export default App;
 
 const Navbar = () => {
   return(
-    <Nav defaultActiveKey="/my-portfolio/Home">
+    <Nav defaultActiveKey="/my-portfolio">
       <ul>
         <li>
-          <Nav.Link href="/my-portfolio/Home"> 
+          <Nav.Link href="/my-portfolio"> 
             <FontAwesomeIcon icon={faHome} /> &nbsp;
             HOME
             <span className="border"></span>
