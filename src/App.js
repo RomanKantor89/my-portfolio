@@ -34,7 +34,6 @@ class App extends Component {
   render() {
     return(
       <div className="container">
-
         {/* mobile menu */}
         <div className="mobile-nav">
           <a className="mobile-toggle" onClick={this.updateMenuState}>
@@ -42,6 +41,7 @@ class App extends Component {
           </a>
           <h2><Link to="/" className="nav-link">ROMAN KANTOR</Link></h2>
         </div>
+
         {/* main menu */}
         <CSSTransition in={this.state.mobileToggle} timeout={300} classNames="main-nav" > 
 
@@ -50,7 +50,7 @@ class App extends Component {
               <img className="HeadShotImage" src={require('../src/images/RomanHeadShotCroped.jpg')} alt="Original"/>
               <h2>ROMAN KANTOR</h2>
             </div>
-            <div className="main-menu-links" id="NavLinks" tabIndex="0" onBlur={this.updateMenuState} >
+            <div className="main-menu-links" id="NavLinks">
               <Navbar />
             </div>
             <div className="main-menu-links">
@@ -68,8 +68,8 @@ class App extends Component {
           </div>
         </CSSTransition >
 
-        <div className="content">
-          <Switch>
+        <div className="content"  >
+          <Switch >
             <Route exact path='/' render={() => (<Home />)} />
             <Route exact path='/AboutMe' render={() => (<AboutMe />)} />
             <Route exact path='/Resume' render={() => (<Resume />)} />
@@ -79,7 +79,6 @@ class App extends Component {
             <Route render={() => (<NotFound />)} />
           </Switch> 
         </div>
-        
       </div>
     )
   }
