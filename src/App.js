@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import {Link} from 'react-router-dom';
 import { Route, Switch} from "react-router-dom";
-import { faHome, faUser, faIdCard, faSuitcase, faBlog, faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CSSTransition } from 'react-transition-group';
@@ -13,30 +13,29 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import NotFound from './components/Not_found/NotFound'
+import Navbar from './components/nav'
+import OutsideClickHandler from 'react-outside-click-handler';
 
 import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.updateMenuState = this.updateMenuState.bind(this);
-
   }
+  
   state = {
     mobileToggle: false,
     isActive: false,
-  }
-
-  updateMenuState(){
-    this.setState({mobileToggle: !this.state.mobileToggle})
   }
   
   render() {
     return(
       <div className="container">
         {/* mobile menu */}
+        <OutsideClickHandler onOutsideClick={() => { this.setState({mobileToggle:false}) }}>
+
         <div className="mobile-nav">
-          <a className="mobile-toggle" onClick={this.updateMenuState}>
+          <a className="mobile-toggle" onClick={() => { this.setState({mobileToggle: !this.state.mobileToggle}) }}>
             <FontAwesomeIcon icon={faBars}/>  
           </a>
           <h2><Link to="/" className="nav-link">ROMAN KANTOR</Link></h2>
@@ -50,9 +49,9 @@ class App extends Component {
               <img className="HeadShotImage" src={require('../src/images/RomanHeadShotCroped.jpg')} alt="Original"/>
               <h2>ROMAN KANTOR</h2>
             </div>
-            <div className="main-menu-links" id="NavLinks">
-              <Navbar />
-            </div>
+              <div className="main-menu-links" id="NavLinks">
+                <Navbar/>
+              </div>
             <div className="main-menu-links">
               <p id="githubIcon">  
               <Nav.Link href="https://github.com/RomanKantor89" target="_blank">
@@ -67,6 +66,7 @@ class App extends Component {
             </div>
           </div>
         </CSSTransition >
+        </OutsideClickHandler>
 
         <div className="content"  >
           <Switch >
@@ -79,51 +79,12 @@ class App extends Component {
             <Route render={() => (<NotFound />)} />
           </Switch> 
         </div>
+
       </div>
     )
   }
 }
 
 export default App;
-
-const Navbar = () => {
-  return(
-    <Nav defaultActiveKey="/">
-      <ul>
-        <li>
-          <Link to="/" className="nav-link" > 
-            <FontAwesomeIcon icon={faHome} /> &nbsp;
-            HOME
-            <span className="border"></span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/AboutMe" className="nav-link">
-            <FontAwesomeIcon  icon={faUser}/> &nbsp;
-            ABOUT ME
-          </Link>
-        </li>
-        <li>
-          <Link to="/Resume" className="nav-link">
-            <FontAwesomeIcon icon={faIdCard}/> &nbsp;
-            RESUME
-          </Link>
-        </li>
-        <li>
-          <Link to="/Portfolio" className="nav-link">
-            <FontAwesomeIcon icon={faSuitcase}/> &nbsp;
-            PORTFOLIO
-          </Link>
-        </li>
-        <li>
-          <Link to="/Contact" className="nav-link">
-            <FontAwesomeIcon icon={faEnvelope}/> &nbsp;
-            CONTACT
-          </Link>
-        </li>
-      </ul>
-    </Nav>
-  );
-}
 
 
