@@ -23,12 +23,12 @@ class AboutMe extends Component {
               In this page I would like you to meet me not as a set of skills, but rather from a personal perspective. 
             </p><br/>
             <p>
-              I love coding and although I am late bloomer in this field, 
-              I am glad I did discover my passion towards coding sooner than later. 
+              I love coding and although I am a late bloomer in this field, 
+              I am glad I discovered my passion towards coding sooner than later. 
               I am a very social person, and therefore I have many friends with whom I like spending my free time, 
               I am also very easy going and very easy to get along with. 
-              My favorite stress reliever is sport which could be in a form of a jog in a summer time, 
-              just a visit to the gym or any other sport activity. 
+              My favorite stress relieving activity is to jog in the summer time 
+              and exercise in the gym. 
             </p><br/>
             <p>
                 I am very excited for my new career path that I am fully engaged in, 

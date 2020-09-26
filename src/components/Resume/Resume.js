@@ -25,7 +25,7 @@ class Resume extends Component {
                   <h5>Info-Tech Research Group, Toronto, CA</h5>
                   <p>At this internship position I was a member of a web dev team that is partially responsible for maintaining some parts of the existing code, 
                      but mainly involved in the new feature development. 
-                     I got to experience a real-world agile web development environment and to be a part of a true team work experience.
+                     I experienced a real-world agile web development environment and a true team work experience.
                      This position involved hands on problem solving using mainly Ruby on Rails (back-end), SQL and a bit of JavaScript.
                      The vast environments and databases were fascinating to work with. 
                   </p>
