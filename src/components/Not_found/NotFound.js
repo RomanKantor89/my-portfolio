@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Particles from 'react-tsparticles'
-import Nav from 'react-bootstrap/Nav';
 import {Link} from 'react-router-dom';
 import '../../App.css';
 import './NotFound.css';

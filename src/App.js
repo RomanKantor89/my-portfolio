@@ -10,7 +10,6 @@ import Home from './components/Home/Home'
 import AboutMe from './components/About_me/AboutMe'
 import Resume from './components/Resume/Resume'
 import Portfolio from './components/Portfolio/Portfolio'
-import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 import NotFound from './components/Not_found/NotFound'
 import Navbar from './components/nav'
@@ -18,11 +17,7 @@ import OutsideClickHandler from 'react-outside-click-handler';
 
 import './App.css';
 
-class App extends Component {
-  constructor(props){
-    super(props);
-  }
-  
+class App extends Component { 
   state = {
     mobileToggle: false,
     isActive: false,
@@ -35,9 +30,9 @@ class App extends Component {
         <OutsideClickHandler onOutsideClick={() => { this.setState({mobileToggle:false}) }}>
 
         <div className="mobile-nav">
-          <a className="mobile-toggle" onClick={() => { this.setState({mobileToggle: !this.state.mobileToggle}) }}>
+          <span className="mobile-toggle" onClick={() => { this.setState({mobileToggle: !this.state.mobileToggle}) }}>
             <FontAwesomeIcon icon={faBars}/>  
-          </a>
+          </span>
           <h2><Link to="/" className="nav-link">ROMAN KANTOR</Link></h2>
         </div>
 
@@ -74,7 +69,6 @@ class App extends Component {
             <Route exact path='/AboutMe' render={() => (<AboutMe />)} />
             <Route exact path='/Resume' render={() => (<Resume />)} />
             <Route exact path='/Portfolio' render={() => (<Portfolio />)} />
-            <Route exact path='/Blog' render={() => (<Blog />)} />
             <Route exact path='/Contact' render={() => (<Contact />)} />
             <Route render={() => (<NotFound />)} />
           </Switch> 

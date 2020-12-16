@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import {NavLink} from 'react-router-dom';
-import { faHome, faUser, faIdCard, faSuitcase, faBlog, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faIdCard, faSuitcase, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 

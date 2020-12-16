@@ -111,7 +111,7 @@ class Contact extends Component {
           </div>
           <div className="contact-item">
             <div> <FontAwesomeIcon className="icon" icon={faMapMarkerAlt}/></div>
-            <h5> <a href="https://goo.gl/maps/Uxs77Sv6P2H23aZcA" target="_blank"> Toronto, Canada </a> </h5>
+            <h5> <a href="https://goo.gl/maps/Uxs77Sv6P2H23aZcA" target="_blank" rel='noopener noreferrer'> Toronto, Canada </a> </h5>
           </div>
           <div className="contact-item">
             <div> <FontAwesomeIcon className="icon" icon={faPhone}/></div>

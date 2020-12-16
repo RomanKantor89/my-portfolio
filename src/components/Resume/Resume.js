@@ -75,7 +75,7 @@ class Resume extends Component {
               </li>
             </ul>  
             <div className="resume-button">
-              <a className="btn-main" href="https://indigo-hummingbird-6424.twil.io/assets/Roman%20Kantor%20Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
+              <a className="btn-main" href="https://indigo-hummingbird-6424.twil.io/assets/Roman%20Kantor%20Resume.pdf" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME</a>
             </div>
           </div> 
 
