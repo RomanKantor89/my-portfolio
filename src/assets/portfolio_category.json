@@ -1,0 +1,111 @@
+[
+    {
+        "name": "iOS",
+        "items":[
+            {
+                "mobileTitle": "Weather App",
+                "cardImage": "weather_app.png",
+                "cardTitle": "Weather App (Swift/API's/Core Data)",
+                "gitLink": "https://github.com/RomanKantor89/Weather_App"
+            },
+            {
+                "mobileTitle": "Tickets App",
+                "cardImage": "tickets.png",
+                "cardTitle": "Tickets Management (Swift + API)",
+                "gitLink": "https://github.com/RomanKantor89/Tickets_App"
+            },
+            {
+                "mobileTitle": "Contact Management",
+                "cardImage": "contacts.png",
+                "cardTitle": "Contact Management (Swift)",
+                "gitLink": "https://github.com/RomanKantor89/Contact_Management"
+            },
+            {
+                "mobileTitle": "Gallery App",
+                "cardImage": "gallery.png",
+                "cardTitle": "Image Gallery (Swift)",
+                "gitLink": "https://github.com/RomanKantor89/Gallery_App"
+            }
+        ]
+    },
+    {
+        "name": "C++",
+        "items":[
+            {
+                "mobileTitle": "Words Suggestion",
+                "cardImage": "word-suggestion.jpg",
+                "cardTitle": "Words Suggestion \n (Trees + Recursion)",
+                "gitLink": "https://github.com/RomanKantor89/Word_Suggestions_Project"
+            },
+            {
+                "mobileTitle": "Maze Project",
+                "cardImage": "maze.jpg",
+                "cardTitle": "Maze Project \n (Data Structures)",
+                "gitLink": "https://github.com/RomanKantor89/Maze_Project"
+            },
+            {
+                "mobileTitle": "Assembly Line",
+                "cardImage": "assembly-line.png",
+                "cardTitle": "Assembly Line \n (C++)",
+                "gitLink": "https://github.com/RomanKantor89/Assembly_Line_Project"
+            }
+        ]
+    },
+    {
+        "name": "WEB",
+        "items":[
+            {
+                "mobileTitle": "Store Management",
+                "cardImage": "store-manage.png",
+                "cardTitle": "Store Management App \n (Angular + NodeJS + MongoDB)",
+                "gitLink": "https://github.com/RomanKantor89/Store_Management_App"
+            },
+            {
+                "mobileTitle": "Student Management",
+                "cardImage": "student-manage.png",
+                "cardTitle": "Student \n Management App \n (Angular + NodeJS)",
+                "gitLink": "https://github.com/RomanKantor89/Student-Courses_Management"
+            },
+            {
+                "mobileTitle": "Simple CRUD",
+                "cardImage": "crud.jpg",
+                "cardTitle": "Simple CRUD App \n (React + NodeJS)",
+                "gitLink": "https://github.com/RomanKantor89/Persons_CRUD"
+            },
+            {
+                "mobileTitle": "My-Portfolio",
+                "cardImage": "portfolio.jpg",
+                "cardTitle": "My-Portfolio \n (React + NodeJS)",
+                "gitLink": "https://github.com/RomanKantor89/my-portfolio"
+            }
+        ]
+    },
+    {
+        "name": "PYTHON",
+        "items":[
+            {
+                "mobileTitle": "Malware Imitation",
+                "cardImage": "malware.jpg",
+                "cardTitle": "Malware Imitation \n (Daemonized App)",
+                "gitLink": "https://github.com/RomanKantor89/Malware_Imitation"
+            }
+        ]
+    },
+    {
+        "name": "PLSQL",
+        "items":[
+            {
+                "mobileTitle": "Company Database",
+                "cardImage": "erd.png",
+                "cardTitle": "Company Database \n (PLSQL)",
+                "gitLink": "https://github.com/RomanKantor89/Company_Database"
+            },
+            {
+                "mobileTitle": "Song Rating DB",
+                "cardImage": "plsql.jpg",
+                "cardTitle": "Song Rating Database \n (PLSQL)",
+                "gitLink": "https://github.com/RomanKantor89/Songs_Rating_Database"
+            }
+        ]
+    }
+]
