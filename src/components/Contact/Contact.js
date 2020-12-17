@@ -49,18 +49,14 @@ class Contact extends Component {
           return response.json();
         } else if (response.status >= 400 && response.status < 500) {
           // Error caused by the requestor
-          console.log(response.status);
-          console.log(response.statusText);
           throw Error(`HTTP ${response.status}, ${response.statusText}`); 
         } else {
           // Some other situation
-          console.log(response.status);
-          console.log(response.statusText);
           throw Error(`HTTP ${response.status}, ${response.statusText}`);
         }
       })
       .then(responseData => {
-        console.log(responseData);
+        //success
       })
       .catch(error => {
         // Handles an error thrown above, as well as network general errors
