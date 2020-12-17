@@ -4,8 +4,11 @@ import { faIdCard } from "@fortawesome/free-solid-svg-icons";
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import './Resume.css';
 import '../../App.css';
+import skills from '../../assets/skills.json'
+
 
 class Resume extends Component {
+
   render(){
     return(
       <div className="page">
@@ -81,75 +84,43 @@ class Resume extends Component {
 
           <div className="section">
             <h3>Coding Skills</h3>
-            <div className="skill-item">
-              <h4 className="skill-name"> C++ </h4>
-                <ProgressBar now={70}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> Java </h4>
-                <ProgressBar now={60}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> JavaScript </h4>
-                <ProgressBar now={70}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> TypeScript </h4>
-                <ProgressBar now={70}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> Python </h4>
-                <ProgressBar now={65}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> Ruby </h4>
-                <ProgressBar now={55}>
-                </ProgressBar>
-            </div>
+            <Section skills={skills[0]}/>
           </div>
 
           <div className="section">
             <h3>Web Technologies</h3>
-            <div className="skill-item">
-              <h4 className="skill-name"> Angular </h4>
-                <ProgressBar now={75}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> ReactJS </h4>
-                <ProgressBar now={55}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> NodeJS </h4>
-                <ProgressBar now={75}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> Rails </h4>
-                <ProgressBar now={45}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> Bootstrap </h4>
-                <ProgressBar now={75}>
-                </ProgressBar>
-            </div>
-            <div className="skill-item">
-              <h4 className="skill-name"> CSS </h4>
-                <ProgressBar now={65}>
-                </ProgressBar>
-            </div>
+            <Section skills={skills[1]}/>
           </div>
+
         </div>
       </div>  
     )
   }
+}
+
+// section for skill category
+function Section(props){
+  let items = props.skills.items
+  return(
+    <div>
+      {
+        items.map((item,index) => 
+          <SectionItem key={index} item={item}/>
+        )
+      }
+    </div>
+  )
+}
+
+// adding each skills item to progress bar
+function SectionItem(props){
+  let {name, progress} = props.item;
+  return(
+    <div className="skill-item">
+      <h4 className="skill-name"> {name} </h4>
+      <ProgressBar now={progress}></ProgressBar>
+    </div>
+  )
 }
 
 export default Resume;

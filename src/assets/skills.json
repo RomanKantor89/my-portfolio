@@ -1,0 +1,63 @@
+[
+    {
+        "name":"Coding Skills",
+        "items":
+        [
+            {
+                "name":"C++",
+                "progress":70
+            },
+            {
+                "name":"Java",
+                "progress":60
+            },
+            {
+                "name":"JavaScript",
+                "progress":70
+            },
+            {
+                "name":"TypeScript",
+                "progress":70
+            },
+            {
+                "name":"Python",
+                "progress":65
+            },
+            {
+                "name":"iOS (Swift + Xcode)",
+                "progress":80
+            }
+
+        ]
+    },
+    {
+        "name":"Web Technologies",
+        "items":
+        [
+            {
+                "name":"Angular",
+                "progress":70
+            },
+            {
+                "name":"ReactJS",
+                "progress":75
+            },
+            {
+                "name":"NodeJS",
+                "progress":75
+            },
+            {
+                "name":"Rails",
+                "progress":45
+            },
+            {
+                "name":"Bootstrap",
+                "progress":75
+            },
+            {
+                "name":"CSS",
+                "progress":75
+            }
+        ]
+    }
+]

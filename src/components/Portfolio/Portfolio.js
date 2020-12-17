@@ -80,7 +80,7 @@ function ActiveSection (props) {
     <div className="portfolio-items">
       {
         items.map((item, index) => 
-          <InventoryItem key={index} item={item} />
+          <SectionItem key={index} item={item} />
         )
       }
     </div>
@@ -88,7 +88,7 @@ function ActiveSection (props) {
 }
 
 // return each item in the category in a card
-function InventoryItem (props) {
+function SectionItem (props) {
   let {mobileTitle, cardImage, cardTitle, gitLink } = props.item;
   let imageUrl = require(`../../images/${cardImage}`);
 
