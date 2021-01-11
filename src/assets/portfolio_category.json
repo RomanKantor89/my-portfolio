@@ -23,8 +23,8 @@
             {
                 "mobileTitle": "Gallery App",
                 "cardImage": "gallery.png",
-                "cardTitle": "Image Gallery (Swift)",
-                "gitLink": "https://github.com/RomanKantor89/Gallery_App"
+                "cardTitle": "Image Repository App (Swift + Google API)",
+                "gitLink": "https://github.com/RomanKantor89/Image_Repository"
             }
         ]
     },
