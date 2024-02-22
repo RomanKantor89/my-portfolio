@@ -4,28 +4,29 @@
         "items":
         [
             {
-                "name":"C++",
-                "progress":70
+                "name":"OOP",
+                "progress":80
             },
             {
-                "name":"Java",
-                "progress":60
-            },
-            {
-                "name":"JavaScript",
-                "progress":70
-            },
-            {
-                "name":"TypeScript",
+                "name":"JavaScript/TypeScript",
                 "progress":70
             },
             {
                 "name":"Python",
-                "progress":65
+                "progress":70
             },
             {
-                "name":"iOS (Swift + Xcode)",
-                "progress":80
+                "name":"C++",
+                "progress":50
+            },
+            {
+                "name":"Java",
+                "progress":20
+            },
+            
+            {
+                "name":"C#",
+                "progress":50
             }
 
         ]
@@ -35,28 +36,28 @@
         "items":
         [
             {
-                "name":"Angular",
+                "name":"ReactJS",
                 "progress":70
             },
             {
-                "name":"ReactJS",
-                "progress":75
-            },
-            {
                 "name":"NodeJS",
-                "progress":75
+                "progress":50
             },
             {
-                "name":"Rails",
-                "progress":45
+                "name":"Selenium WebDriver",
+                "progress":60
             },
             {
                 "name":"Bootstrap",
-                "progress":75
+                "progress":60
             },
             {
                 "name":"CSS",
-                "progress":75
+                "progress":60
+            },
+            {
+                "name":"Angular",
+                "progress":30
             }
         ]
     }

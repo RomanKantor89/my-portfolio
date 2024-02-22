@@ -41,7 +41,7 @@ class App extends Component {
 
           <div className={this.state.mobileToggle ? "main-nav-on" : "main-nav"}>
             <div className="head-shot-section"> 
-              <img className="HeadShotImage" src={require('../src/images/RomanHeadShotCroped.jpg')} alt="Original"/>
+              <img className="HeadShotImage" src={require('../src/images/myphoto2.jpg')} alt="Original"/>
               <h2>ROMAN KANTOR</h2>
             </div>
               <div className="main-menu-links" id="NavLinks">

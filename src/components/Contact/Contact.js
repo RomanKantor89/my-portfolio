@@ -5,6 +5,7 @@ import { faPaperPlane, faMapMarkerAlt, faPhone} from "@fortawesome/free-solid-sv
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ReCAPTCHA from 'react-google-recaptcha';
 import '../../App.css';
 import './Contact.css';
 
@@ -15,6 +16,7 @@ class Contact extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.reRef = React.createRef();
   }
 
   state = {
@@ -29,16 +31,19 @@ class Contact extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit (e) {
+  async handleSubmit (e) {
     e.preventDefault();
     
+    const token = await this.reRef.current.executeAsync();
+    this.reRef.current.reset()
     const newContact = {
       'name': this.state.name,
       'email': this.state.email,
-      'message': this.state.message
+      'message': this.state.message,
+      'token': token
     };
 
-    fetch("https://pacific-cliffs-62582.herokuapp.com/api/email", {
+    fetch("https://us-central1-my-portfolio-c16c0.cloudfunctions.net/emailSender", {
       method: 'POST',
       headers: { "Content-Type": 'application/json' },
       body: JSON.stringify(newContact)
@@ -92,6 +97,11 @@ class Contact extends Component {
               <Col className="message-col">
                 <Form.Control as="textarea" rows="4" className="input" id="message"  name="message" placeholder="Your message" onChange={this.handleChange} />
               </Col>
+              <ReCAPTCHA
+                sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                size="invisible"
+                ref={this.reRef}
+                />
             </Row>
             <div className="contact-button">
               <button className="btn-main" onClick={this.handleSubmit} type="submit" >SEND MESSAGE</button>
