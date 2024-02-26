@@ -59,6 +59,12 @@
                 "cardImage": "malware.jpg",
                 "cardTitle": "Malware Imitation \n (Daemonized App)",
                 "gitLink": "https://github.com/RomanKantor89/Malware_Imitation"
+            },
+            {
+                "mobileTitle": "Selenium Web Driver",
+                "cardImage": "selenium2.png",
+                "cardTitle": "Selenium Web Driver \n (Page Object Model)",
+                "gitLink": "https://github.com/RomanKantor89/Selenium-WebDriver-project"
             }
         ]
     },
